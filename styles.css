@@ -1,4 +1,4 @@
-/* General Styles  */
+/* General Styles */
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -39,8 +39,6 @@ header {
   background: rgba(0, 0, 0, 0.8);
   top: 0;
   z-index: 1000;
-  /* Removed transition property */
-  /* transition: top 0.3s; */
 }
 
 .logo {
@@ -61,13 +59,13 @@ nav {
   margin-left: 30px;
 }
 
-nav a {
+.nav-links li a {
   position: relative;
   overflow: hidden;
   transition: color 0.3s;
 }
 
-nav a::after {
+.nav-links li a::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -78,9 +76,13 @@ nav a::after {
   transition: width 0.3s, left 0.3s;
 }
 
-nav a:hover::after {
+.nav-links li a:hover::after {
   width: 100%;
   left: 0;
+}
+
+nav a:hover {
+  border-bottom: none; /* Remove border-bottom on hover to avoid conflict */
 }
 
 /* Menu Icon for Mobile */
@@ -130,7 +132,8 @@ nav a:hover::after {
 }
 
 .living-hero {
-  background-image: url('images/living.jpg');
+  /* Removed background image to avoid duplicate image */
+  /* background-image: url('images/living.jpg'); */
 }
 
 .team-hero {
@@ -245,6 +248,10 @@ footer p {
     margin: 20px 0;
   }
 
+  .nav-active {
+    right: 0;
+  }
+
   .menu-icon {
     display: block;
   }
@@ -257,16 +264,6 @@ footer p {
     padding: 0 20px;
   }
 }
-
-/* Show Nav Menu */
-.nav-active {
-  right: 0;
-}
-
-/* Removed Header Hide on Scroll */
-/* .header-hidden {
-  top: -100px;
-} */
 
 /* Fade-In Animation */
 .fade-in {
@@ -309,3 +306,16 @@ html {
 .back-to-top:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+
+/* Ensure Navigation Links are Visible */
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hover Effect for Navigation Links */
+.nav-links li a:hover {
+  color: #ddd;
+}
+
