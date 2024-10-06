@@ -39,7 +39,8 @@ header {
   background: rgba(0, 0, 0, 0.8);
   top: 0;
   z-index: 1000;
-  transition: top 0.3s;
+  /* Removed transition property */
+  /* transition: top 0.3s; */
 }
 
 .logo {
@@ -262,10 +263,10 @@ footer p {
   right: 0;
 }
 
-/* Header Hide on Scroll */
-.header-hidden {
+/* Removed Header Hide on Scroll */
+/* .header-hidden {
   top: -100px;
-}
+} */
 
 /* Fade-In Animation */
 .fade-in {
