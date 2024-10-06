@@ -63,6 +63,9 @@ nav {
   position: relative;
   overflow: hidden;
   transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .nav-links li a::after {
@@ -79,6 +82,10 @@ nav {
 .nav-links li a:hover::after {
   width: 100%;
   left: 0;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
 }
 
 nav a:hover {
@@ -198,6 +205,14 @@ main {
   border-radius: 10px;
 }
 
+/* Game Images */
+.game-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
 /* Team List */
 .team-list {
   list-style: none;
@@ -306,16 +321,3 @@ html {
 .back-to-top:hover {
   background: rgba(255, 255, 255, 0.3);
 }
-
-/* Ensure Navigation Links are Visible */
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-/* Hover Effect for Navigation Links */
-.nav-links li a:hover {
-  color: #ddd;
-}
-
