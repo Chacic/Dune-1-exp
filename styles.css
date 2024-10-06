@@ -6,26 +6,52 @@ body {
   color: #fff;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+/* ... existing styles ... */
+
+/* Hero Sections */
+.hero, .page-hero {
+  height: 80vh;
+  background: no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
 }
 
-h1, h2, h3, p {
-  margin: 0 0 20px 0;
+/* ... existing styles ... */
+
+/* Specific Page Hero Backgrounds */
+.hero {
+  background-image: url('images/space-background.jpg');
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.entertainment-hero {
+  background-image: url('images/entertainment-hero.jpg');
 }
 
-li {
-  list-style: none;
+.living-hero {
+  background-image: url('images/living-hero.jpg');
 }
 
-.active {
-  border-bottom: 2px solid #fff;
+.team-hero {
+  background-image: url('images/team.jpg');
+}
+
+/* New CSS Rule to Change Heading Color to Black */
+.entertainment-hero h1 {
+  color: #000;
+}
+
+/* ... existing styles ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* ... existing responsive styles ... */
+}
+
 }
 
 /* Header */
