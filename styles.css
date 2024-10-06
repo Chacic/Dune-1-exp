@@ -77,13 +77,30 @@ nav a:hover {
 /* Hero Sections */
 .hero, .page-hero {
   height: 80vh;
-  background: url('images/space.jpg') no-repeat center center/cover;
+  background: no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 80px;
+}
+
+/* Specific Page Hero Backgrounds */
+.hero {
+  background-image: url('images/space-background.jpg');
+}
+
+.entertainment-hero {
+  background-image: url('images/entertainment.jpg');
+}
+
+.living-hero {
+  background-image: url('images/living.jpg');
+}
+
+.team-hero {
+  background-image: url('images/team.jpg');
 }
 
 .hero h1, .page-hero h1 {
@@ -98,19 +115,6 @@ nav a:hover {
 .page-hero {
   background-position: center;
   background-size: cover;
-}
-
-/* Specific Page Hero Backgrounds */
-.entertainment-hero {
-  background: url('images/entertainment.jpg') no-repeat center center/cover;
-}
-
-.living-hero {
-  background: url('images/living.jpg') no-repeat center center/cover;
-}
-
-.team-hero {
-  background: url('images/team.jpg') no-repeat center center/cover;
 }
 
 /* Buttons */
