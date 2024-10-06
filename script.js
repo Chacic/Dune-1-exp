@@ -1,4 +1,4 @@
-// JavaScript for Menu Animation and Animations on Scroll
+// JavaScript  for Menu Animation and Animations on Scroll
 
 // Variables
 const navLinks = document.querySelector('.nav-links');
